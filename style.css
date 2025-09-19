@@ -1,43 +1,55 @@
-/* Estilo geral */
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #f0f8ff, #ffe4e1);
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo suave */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  color: #333;
 }
 
-/* Caixa central */
+/* Container centralizado */
 .container {
   background: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-  max-width: 400px;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 420px;
   width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   border: 3px solid #ff6f61;
 }
 
 /* Cabeçalho */
 h1 {
-  font-size: 26px;
-  margin-bottom: 20px;
+  font-size: 28px;
   color: #ff6f61;
+  margin-bottom: 8px;
+}
+
+.subtitulo {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+  font-style: italic;
 }
 
 #nome-cantina {
   color: #4caf50;
 }
 
-/* Texto */
-p {
+/* Informações */
+.info p {
   font-size: 18px;
-  margin: 12px 0;
-  color: #333;
+  margin: 10px 0;
 }
 
 #quantidade-salgados {
@@ -47,28 +59,31 @@ p {
 
 #preco-salgado {
   color: #ff9800;
-}
-
-#total-vendido {
-  font-size: 20px;
   font-weight: bold;
-  margin-top: 25px;
-  color: #d35400;
 }
 
 /* Botão */
 button {
-  background-color: #4caf50;
+  background: #4caf50;
   color: white;
   border: none;
   padding: 12px 25px;
-  font-size: 16px;
-  border-radius: 8px;
+  font-size: 18px;
+  border-radius: 10px;
   cursor: pointer;
-  margin-top: 15px;
   transition: 0.3s;
+  margin-top: 20px;
 }
 
 button:hover {
-  background-color: #45a049;
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+/* Resultado */
+.resultado p {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #d35400;
 }

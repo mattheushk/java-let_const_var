@@ -4,29 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cantina da Escola</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Referência ao CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <!-- Cabeçalho -->
-    <h1>Bem-vindo à <span id="nome-cantina">Cantina da Escola</span></h1>
+    <header>
+      <h1>🍽️ <span id="nome-cantina">Cantina da Escola</span></h1>
+      <p class="subtitulo">Comida gostosa e energia para o seu dia!</p>
+    </header>
 
-    <!-- Informações -->
-    <p id="quantidade-salgados">Temos 20 salgados disponíveis.</p>
-    <p id="preco-salgado">Cada salgado custa R$5</p>
+    <!-- Informações da Cantina -->
+    <section class="info">
+      <p id="quantidade-salgados"><strong>Temos 20 salgados disponíveis</strong></p>
+      <p id="preco-salgado">Cada salgado custa <strong>R$5</strong></p>
+    </section>
 
-    <!-- Botão para registrar venda -->
-    <div>
+    <!-- Botão de ação -->
+    <section class="acao">
       <button id="vender">Vender 5 Salgados</button>
-    </div>
+    </section>
 
-    <!-- Total de vendas -->
-    <p id="total-vendido">A cantina vendeu R$0</p>
+    <!-- Total vendido -->
+    <section class="resultado">
+      <p id="total-vendido">A cantina vendeu <strong>R$0</strong></p>
+    </section>
   </div>
 
-  <!-- Script externo -->
   <script src="script.js"></script>
 </body>
 </html>
-
-
