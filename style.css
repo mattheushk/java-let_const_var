@@ -31,7 +31,7 @@ h1 {
 }
 
 #nome-cantina {
-  color: #4caf50; /* Cor verde para dar contraste */
+  color: #4caf50; /* Verde para contraste */
 }
 
 /* Parágrafos Informativos */
@@ -43,7 +43,7 @@ p {
 
 /* Estilo do Botão */
 button {
-  background-color: #4caf50; /* Verde vibrante para o botão */
+  background-color: #4caf50; /* Verde vibrante */
   color: white;
   border: none;
   padding: 12px 25px;
@@ -56,19 +56,19 @@ button {
 
 /* Efeito de Hover no Botão */
 button:hover {
-  background-color: #45a049; /* Verde mais escuro ao passar o mouse */
+  background-color: #45a049; /* Verde mais escuro */
 }
 
-/* Estilo para o Texto do Total Vendido */
+/* Texto do Total Vendido */
 #total-vendido {
   font-size: 20px;
   font-weight: bold;
-  color: #ff9800; /* Cor laranja para destacar o total vendido */
+  color: #ff9800; /* Laranja para destaque */
   margin-top: 30px;
 }
 
-/* Estilo para os Parágrafos de Informações */
+/* Quantidade de Salgados */
 #quantidade-salgados {
   font-size: 18px;
-  color: #2196f3; /* Cor azul para o texto de quantidade de salgados */
+  color: #2196f3; /* Azul para destaque */
 }
