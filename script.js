@@ -1,48 +1,51 @@
-// --- Passo 1: Declarando variáveis ---
-
-// 'var' é usado para o nome da cantina. Ele tem um escopo mais amplo (global ou de função).
-// Embora ainda funcione, 'let' ou 'const' são mais recomendados em projetos modernos.
+// Passo 1 - Declarando variáveis
 var nomeCantina = "Cantina da Escola";
-console.log("Bem-vindo à " + nomeCantina);
-
-// 'let' é usado para a quantidade de salgados porque esse valor vai mudar.
-// Ele respeita o escopo de bloco, sendo uma opção mais segura que 'var'.
 let salgados = 20;
-console.log("Temos " + salgados + " salgados disponíveis.");
-
-// 'const' é usado para o preço, pois ele é um valor fixo que não deve ser alterado.
-// Tentar mudar uma 'const' causará um erro.
 const precoSalgado = 5;
+
+// Exibindo as informações iniciais no console
+console.log("Bem-vindo à " + nomeCantina);
+console.log("Temos " + salgados + " salgados disponíveis.");
 console.log("Cada salgado custa R$" + precoSalgado);
 
-// --- Passo 2: Atualizando valores ---
+// Passo 2 - Atualizando valores
+let totalVendido = 0; // Para armazenar o valor total vendido
 
-// O número de salgados é atualizado subtraindo 5 do valor inicial.
-salgados = salgados - 5; 
+// Função que será chamada ao clicar no botão "Vender 5 Salgados"
+document.getElementById('vender').addEventListener('click', function() {
+  if (salgados >= 5) {
+    // Atualizando o número de salgados
+    salgados -= 5;
 
-// Uma nova variável, 'totalVendido', é criada com 'let' para calcular o valor total.
-let totalVendido = 5 * precoSalgado; 
+    // Calculando o valor vendido
+    totalVendido += 5 * precoSalgado;
 
-console.log("Agora restam " + salgados + " salgados.");
-console.log("A cantina vendeu R$" + totalVendido);
+    // Atualizando a tela com os novos valores
+    document.getElementById('quantidade-salgados').innerText = "Agora restam " + salgados + " salgados.";
+    document.getElementById('total-vendido').innerText = "A cantina vendeu R$" + totalVendido;
 
-// --- Passo 3: Teste rápido (Escopo) ---
+    console.log("Agora restam " + salgados + " salgados.");
+    console.log("A cantina vendeu R$" + totalVendido);
+  } else {
+    alert("Não há salgados suficientes para vender!");
+  }
+});
 
-// O que acontece se tentar mudar o valor de precoSalgado?
-// descomente a linha abaixo para ver o erro no console:
-// precoSalgado = 6; 
-
-// O que acontece se criar outra variável com var e let dentro de um bloco?
-if (true) {
-    var testeVar = "Sou var";  
-    let testeLet = "Sou let";  
-    console.log(testeVar); // Funciona
-    console.log(testeLet); // Funciona
+// Passo 3 - Teste rápido
+// O código abaixo vai gerar um erro ao tentar alterar a constante precoSalgado
+try {
+  precoSalgado = 6; // Teste e veja o erro
+} catch (e) {
+  console.error("Erro ao tentar mudar o preço do salgado:", e);
 }
 
-// 'testeVar' é acessível fora do bloco 'if' porque 'var' tem escopo global.
-console.log(testeVar); 
+// Exemplo com var e let dentro de um bloco
+if (true) {
+  var testeVar = "Sou var"; 
+  let testeLet = "Sou let"; 
+  console.log(testeVar); // funciona 
+  console.log(testeLet); // funciona
+} 
 
-// 'testeLet' NÃO é acessível fora do bloco 'if' porque 'let' tem escopo de bloco.
-// descomente a linha abaixo para ver o ERRO:
-// console.log(testeLet);
+console.log(testeVar); // funciona
+console.log(testeLet); // ERRO
