@@ -1,7 +1,7 @@
-/* Estilos Gerais do Body */
+/* Estilo geral */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f8ff; /* Fundo mais suave e colorido */
+  background: linear-gradient(135deg, #f0f8ff, #ffe4e1);
   margin: 0;
   padding: 0;
   display: flex;
@@ -10,65 +10,65 @@ body {
   height: 100vh;
 }
 
-/* Container Centralizado */
+/* Caixa central */
 .container {
-  background-color: #ffffff; /* Fundo branco para o container */
+  background: #fff;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
   max-width: 400px;
   width: 100%;
-  border: 5px solid #ff6f61; /* Borda colorida para destacar o conteúdo */
+  border: 3px solid #ff6f61;
 }
 
-/* Cabeçalho com Nome da Cantina */
+/* Cabeçalho */
 h1 {
-  color: #ff6f61; /* Cor vibrante para o título */
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 26px;
   margin-bottom: 20px;
+  color: #ff6f61;
 }
 
 #nome-cantina {
-  color: #4caf50; /* Verde para contraste */
+  color: #4caf50;
 }
 
-/* Parágrafos Informativos */
+/* Texto */
 p {
-  color: #333; /* Texto em cinza escuro para boa legibilidade */
   font-size: 18px;
-  margin: 10px 0;
+  margin: 12px 0;
+  color: #333;
 }
 
-/* Estilo do Botão */
-button {
-  background-color: #4caf50; /* Verde vibrante */
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  margin-top: 20px;
-  border-radius: 8px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+#quantidade-salgados {
+  color: #2196f3;
+  font-weight: bold;
 }
 
-/* Efeito de Hover no Botão */
-button:hover {
-  background-color: #45a049; /* Verde mais escuro */
+#preco-salgado {
+  color: #ff9800;
 }
 
-/* Texto do Total Vendido */
 #total-vendido {
   font-size: 20px;
   font-weight: bold;
-  color: #ff9800; /* Laranja para destaque */
-  margin-top: 30px;
+  margin-top: 25px;
+  color: #d35400;
 }
 
-/* Quantidade de Salgados */
-#quantidade-salgados {
-  font-size: 18px;
-  color: #2196f3; /* Azul para destaque */
+/* Botão */
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
 }
