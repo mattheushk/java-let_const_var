@@ -64,7 +64,7 @@ h1 {
 
 /* Botão */
 button {
-  background: #4caf50;
+  background: #564caf;
   color: white;
   border: none;
   padding: 12px 25px;
@@ -76,7 +76,7 @@ button {
 }
 
 button:hover {
-  background: #45a049;
+  background: #5945a0;
   transform: scale(1.05);
 }
 
